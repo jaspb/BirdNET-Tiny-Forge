@@ -42,7 +42,7 @@ fi
 # This is a patched fork which pins tensorflow version to the one used in this repo,
 # and makes the signal library available to python
 if [ ! -d "$TFLITE_MICRO_PATH" ]; then
-    git clone git@github.com:gio-foldai/tflite-micro.git "$TFLITE_MICRO_PATH"
+    git clone https://github.com/gio-foldai/tflite-micro.git "$TFLITE_MICRO_PATH"
     cd "$TFLITE_MICRO_PATH"
     git checkout $TFLITE_COMMIT
     cd ..
